@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <c:changelog project="com.io7m.jsay" xmlns:c="urn:com.io7m.changelog:4.0">
   <c:releases>
-    <c:release date="2019-06-22T17:37:46+00:00" ticket-system="com.github.io7m.jsay" version="0.0.1">
+    <c:release date="2019-06-22T00:00:00+00:00" is-open="false" ticket-system="com.github.io7m.jsay" version="0.0.1">
       <c:changes>
-        <c:change date="2019-06-22T17:37:46+00:00" summary="Initial public release"/>
+        <c:change date="2019-06-22T00:00:00+00:00" summary="Initial public release"/>
+      </c:changes>
+    </c:release>
+    <c:release date="2024-06-23T17:58:59+00:00" is-open="false" ticket-system="com.github.io7m.jsay" version="1.0.0">
+      <c:changes>
+        <c:change date="2024-04-19T00:00:00+00:00" summary="Update org.slf4j:slf4j-api:2.0.10 → 2.0.13."/>
+        <c:change date="2024-04-19T00:00:00+00:00" summary="Update ch.qos.logback:logback-classic:1.4.14 → 1.5.6."/>
+        <c:change date="2024-04-19T00:00:00+00:00" summary="Update artemis.version:2.31.2 → 2.33.0."/>
+        <c:change date="2024-06-03T00:00:00+00:00" summary="Update artemis.version:2.33.0 → 2.34.0."/>
+        <c:change date="2024-06-17T00:00:00+00:00" summary="Update artemis.version:2.34.0 → 2.35.0."/>
+        <c:change compatible="false" date="2024-06-23T00:00:00+00:00" summary="Require JDK 21."/>
       </c:changes>
     </c:release>
   </c:releases>
   <c:ticket-systems>
-    <c:ticket-system default="true" id="com.github.io7m.jsay" url="https://www.github.com/io7m/jsay/issues/"/>
+    <c:ticket-system default="true" id="com.github.io7m.jsay" url="https://www.github.com/io7m-com/jsay/issues/"/>
   </c:ticket-systems>
 </c:changelog>
