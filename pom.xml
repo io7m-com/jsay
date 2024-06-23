@@ -14,7 +14,7 @@
 
   <groupId>com.io7m.jsay</groupId>
   <artifactId>com.io7m.jsay</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
 
   <name>com.io7m.jsay</name>
@@ -23,7 +23,7 @@
 
   <properties>
     <!-- Configuration. -->
-    <io7m.api.previousVersion>0.0.3</io7m.api.previousVersion>
+    <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
 
     <!-- Third-party depenndencies. -->
