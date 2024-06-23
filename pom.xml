@@ -14,7 +14,7 @@
 
   <groupId>com.io7m.jsay</groupId>
   <artifactId>com.io7m.jsay</artifactId>
-  <version>0.0.4-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>com.io7m.jsay</name>
@@ -22,10 +22,12 @@
   <url>https://www.io7m.com/software/jsay</url>
 
   <properties>
-    <artemis.version>2.35.0</artemis.version>
+    <!-- Configuration. -->
     <io7m.api.previousVersion>0.0.3</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
-    <maven.javadoc.skip>true</maven.javadoc.skip>
+
+    <!-- Third-party depenndencies. -->
+    <artemis.version>2.35.0</artemis.version>
   </properties>
 
   <licenses>
@@ -169,6 +171,16 @@
                   </manifestEntries>
                 </transformer>
               </transformers>
+              <filters>
+                <filter>
+                  <artifact>*:*</artifact>
+                  <excludes>
+                    <exclude>META-INF/*.RSA</exclude>
+                    <exclude>META-INF/*.SF</exclude>
+                    <exclude>**/module-info.class</exclude>
+                  </excludes>
+                </filter>
+              </filters>
             </configuration>
           </execution>
         </executions>

@@ -1,0 +1,50 @@
+
+## jsay
+
+The `jsay` package provides a tiny command-line
+[JMS](https://en.wikipedia.org/wiki/Java_Message_Service) sender.
+
+## Features
+
+* Tiny command-line JMS message sender.
+* ISC license.
+
+## Usage
+
+The `jsay` command-line tool connects to a _message broker_, sends a single
+text message, and then disconnects and exits.
+
+```
+INFO [main] com.io7m.jsay.Main: Usage: jsay [options]
+  Options:
+  * --address
+      The message address
+  * --broker-uri
+      The message broker URI
+    --expires
+      The message expiry time
+    --file
+      The message file (if not specified, data is read from stdin)
+      Default: /dev/stdin
+    --password
+      The message broker password
+    --topic
+      The destination is a topic, not a queue.
+      Default: false
+    --user
+      The message broker user
+    --verbose
+      The level of logging verbosity
+      Default: INFO
+      Possible Values: [TRACE, DEBUG, INFO, WARN, ERROR]
+```
+
+The following invocation sends a `Hello world!` message to the JMS destination
+named `announcements` on the given broker:
+
+```
+$ echo 'Hello world!' | java -jar jsay.jar \
+  --address announcements \
+  --broker-uri tcp://messaging.example.com:54663 \
+  --expires 2024-01-01T00:00:00+00:00
+```
