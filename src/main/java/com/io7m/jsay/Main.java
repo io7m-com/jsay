@@ -51,11 +51,13 @@ public final class Main
 
   private enum LogLevel
   {
+    // CHECKSTYLE:OFF
     TRACE,
     DEBUG,
     INFO,
     WARN,
     ERROR
+    // CHECKSTYLE:ON
   }
 
   private static final class CommandLineOptions
